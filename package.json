@@ -1,1 +1,19 @@
-{"name":"backend-service","private":true,"scripts":{"test":"echo tests"}}
+{
+  "name": "domain-backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@clickhouse/client": "^1.10.0",
+    "fastify": "^5.2.0",
+    "ioredis": "^5.4.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
